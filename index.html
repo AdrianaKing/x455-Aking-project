@@ -83,36 +83,40 @@
   </div>
   <!-- Inline CSS -->
   <section style="width: auto; height: 5px; background-color: #FBF3E4;"></section>
-  <footer>
-    <div class="footer-content-wrapper">
-      <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
-        <h3>Quick Links</h3>
-        <a href="#" target="_blank">Home</a>
+  <div style="display: flex; flex-direction: column;"> <!-- pam added -->
+    <footer>
+      <div class="footer-content-wrapper">
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+          <h3>Quick Links</h3>
+          <a href="#" target="_blank">Home</a>
           <a href="#" target="_blank">About</a>
           <a href="#" target="_blank">Services</a>
           <a href="#" target="_blank">Process</a>
           <a href="#" target="_blank">Gallery</a>
-      </div
-      ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
-        <h3>Newsletter:</h3>
-        <span><label>Sign up for Newsletter:</label><br><input type="email" placeholder="enter your email"/></span>
-      </section>
-      </div
-      ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
-          <a href="#" target="_blank">Privacy Policy</a>
-          <a href="#" target="_blank">Terms of Use</a>
-          <a href="#" target="_blank">Accessibility</a>
         </div>
-        <div class="footer-col large-25 small-50 tiny-100 ta-l flt"></divclass>
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+          <h3>Newsletter:</h3>
+          <span><label>Sign up for Newsletter:</label><br><input type="email" placeholder="enter your email"/></span>
+        <!-- pam removed extra </section> -->
+        </div>
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+            <a href="#" target="_blank">Privacy Policy</a>
+            <a href="#" target="_blank">Terms of Use</a>
+            <a href="#" target="_blank">Accessibility</a>
+        </div>
+        <!-- pam removed extra text in closing </divclass> <div class="footer-col large-25 small-50 tiny-100 ta-l flt"></divclass> -->
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
           <a href="#" target="_blank">1-800-123-4567</a>
           <a href="#" target="_blank">TTY: 1-800-987-6543</a>
         </div>
-        <div><span
-          class="fa fa-copyright">All Rights
-          Reserved.</span>
+        <!-- pam moved it outside of footer below <div><span
+          class="fa fa-copyright">All Rights Reserved.</span>
+        </div> -->
       </div>
-  <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
-  </footer>
+      <!-- pam removed <div class="footer-col large-25 small-50 tiny-100 ta-l flt"> -->
+    </footer>
+    <div class="fa fa-copyright copyright-content">All Rights Reserved.</div>
+  </div>
 </body>
 
 </html>
