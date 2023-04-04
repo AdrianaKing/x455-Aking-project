@@ -15,7 +15,7 @@
       <nav id="navLeft">
         <ul style="padding-left: 20px;">
           <li>
-            <a href="./Homepage.html" class="active">Home</a>
+            <a href="./index.html" class="active">Home</a>
           </li>
           <li>
             <a href="./P2-about.html">About</a>
@@ -30,7 +30,7 @@
         <div class="dropdown">
           <button class="dropbtn"><span class="fa fa-bars fa-2x"></span></button>
           <div class="dropdown-content">
-            <a href="./Homepage.html">Home</a>
+            <a href="./index.html">Home</a>
             <a href="./P2-about.html">About</a>
             <a href="./P3-Services.html">Services</a>
             <a href="./P4-Process.html">Process</a>
@@ -58,8 +58,148 @@
     </div>
 
   </header>
+  <main>
+
+    <article>
+      <h1 style="text-align: center;">How can I Help you?</h1>
+      <div>
+        
+        <p style="text-align: center;">
+          I can help you create visual content to communicate messages. By applying visual hierarchy and page layout techniques, use typography and pictures to meet users specific needs and focus on the logic of displaying elements in interactive designs, to optimize their experience.
+        </p>
+        <table id="your-table-items" >
+          <thead>
+            <tr>
+              <th>Services</th>
+              <th>Description</th>
+              <th>Time</th>
+              <th>Budget</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Business Cards Design</td>
+              <td>An essential part of your branding and should act as a visual extension of your brand design.</td>
+              <td>3 days</td>
+              <td>$15.00</td>
+            </tr>
+            <tr>
+              <td>Letterhead Design</td>
+              <td>This unifies your printed correspondence to your brand, used for printed or digital letters.</td>
+              <td>3 days</td>
+              <td>$10.00</td>
+            </tr>
+            <tr>
+              <td>Stationary Design</td>
+              <td>Office supplies such as letterheads, envelopes, pens and pencils, notepads, etc.</td>
+              <td>20 days</td>
+              <td>$75.00</td>
+            </tr>
+            <tr>
+              <td>Flyer Design</td>
+              <td>Advertise an event, product, or service in an eye catching design</td>
+              <td>3 days</td>
+              <td>$15.00</td>
+            </tr>
+            <tr>
+              <td>Brochure Design</td>
+              <td>Introduce a company, organization, products, or services and inform customers of the benefits.</td>
+              <td>5 days</td>
+              <td>$15.00</td>
+            </tr>
+            <tr>
+              <td>Catalog Design</td>
+              <td>A visual design product that shows potential clients your products or services.</td>
+              <td>30 days</td>
+              <td>$100.00</td>
+            </tr>
+            <tr>
+              <td>Menu Design</td>
+              <td>Layout, color scheme, font picking, and prices.</td>
+              <td>10 days</td>
+              <td>$50.00</td>
+            </tr>
+            <tr>
+              <td>Invitation Design</td>
+              <td>Want to invite friends to a special event? 
+                Birthdays, wedding, anniversaries, graduation, etc.</td>
+              <td>5 days</td>
+              <td>$25.00</td>
+            </tr>
+            <tr>
+              <td>Label Design</td>
+              <td>Readability, Typographic Pairing, White Space, Illustrate/ Creativity, Originality.</td>
+              <td>5 days</td>
+              <td>$25.00</td>
+            </tr>
+            <tr>
+              <td>Packing Design</td>
+              <td>Functional, and out standing, that appeals to customers in-store and online.</td>
+              <td>25 days</td>
+              <td>$150.00</td>
+            </tr>
+  
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+  </main>
   <!-- Inline CSS -->
-  <section style="width: auto; height: 1000px; background-color: #FBF3E4;"></section>
+  <section style="width: auto; height: auto; background-color: #FBF3E4;"></section>
+
+<!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+<script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/JavaScript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+<!-- BEG JavaScript -->
+<script>
+  $(document).ready(function () {
+    $("table#your-table-items").tablesorter({
+      sortList: [[2, 1]],
+      CssAsc: "tablesorter-headerAsc",
+      CssDesc: "tablesorter-headerDesc"
+    });
+  });
+</script>
+<!-- END JavaScript -->
+
+  <div style="display: flex; flex-direction: column;"> <!-- pam added -->
+    <footer>
+      <div class="footer-content-wrapper">
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+          <h4>Quick Links</h4>
+          <a href="./index.html" target="_blank">Home</a>
+          <a href="./P2-about.html" target="_blank">About</a>
+          <a href="./P3-Services.html" target="_blank">Services</a>
+          <a href="./P4-Process.html" target="_blank">Process</a>
+          <a href="./P5-Gallery.html" target="_blank">Gallery</a>
+          <a href="./P6-Blog.html" target="_blank">Blog</a>
+        </div>
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+          <h4>Newsletter:</h4>
+          <span><label>Sign up for Newsletter:</label><br><input type="email" placeholder="enter your email"/></span>
+        <!-- pam removed extra </section> -->
+        </div>
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+            <a href="#" target="_blank">Privacy Policy</a>
+            <a href="#" target="_blank">Terms of Use</a>
+            <a href="#" target="_blank">Accessibility</a>
+        </div>
+        <!-- pam removed extra text in closing </divclass> <div class="footer-col large-25 small-50 tiny-100 ta-l flt"></divclass> -->
+        <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+          <a href="#" target="_blank">1-800-123-4567</a>
+          <a href="#" target="_blank">TTY: 1-800-987-6543</a>
+        </div>
+        <!-- pam moved it outside of footer below <div><span
+          class="fa fa-copyright">All Rights Reserved.</span>
+        </div> -->
+      </div>
+      <!-- pam removed <div class="footer-col large-25 small-50 tiny-100 ta-l flt"> -->
+    </footer>
+    <div class="fa fa-copyright copyright-content">All Rights Reserved.</div>
+  </div>
+
 </body>
 
 </html>

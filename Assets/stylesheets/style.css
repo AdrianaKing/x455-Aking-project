@@ -3,25 +3,46 @@ body body,h1,h2,h3,h4 {
   padding: 0;
 }
 
-h1,h2,h3,h4,p,a,label {
+
+h4,a,label {
   text-decoration: none;
   color: #FBF3E4;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.bg {
-   /* Full height */
-  height: 100%; 
-  width: 100%; /* pam added */
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+h1{
+ font-size: 400%;
+ color: #504C46;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ padding: 10px 50px 10px 30px
+}
+h2{
+  font-size: 200%;
+  color: #504C46;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 10px 50px 10px 30px
+}
+p {
+  color: #504C46;
+  font-size: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+  padding: 5px 30px 20px 30px;
+}
+li{
+  color: #504C46;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+  
+}
+body{
+  background-color: #FBF3E4;
 }
 header {
   background-color: #504C46;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 110%;
 }
+/*Nav Bar*/
 .flex-container a:hover {
   background-color: #FF5050;
   color: #FBF3E4;
@@ -71,6 +92,12 @@ nav>ul>li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
+  padding-left: 30px;
+}
+.flex-container-video{
+  align-items: center;
+  text-align: center;
 }
 
 #navDropdown {
@@ -156,6 +183,14 @@ nav>ul>li {
     height: 50px;
     padding-left: 5px;
   }
+  .ThisisME{
+    float: center;
+    padding-right: 50px;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 10px; 
+    
+   }
 }
 /* flex-direction: column */
 section.social-icon {
@@ -169,6 +204,20 @@ section.social-icon {
   color: #FBF3E4;
  }
 section.social-icon :hover{
+  color: #6f87ff;
+  text-decoration: none;
+}
+section.socialicon-pages{
+  padding: 30px;
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #FF5050;
+  color: #FBF3E4;
+
+}
+section.socialicon-pages :hover{
   color: #6f87ff;
   text-decoration: none;
 }
@@ -186,14 +235,9 @@ footer {
   flex-direction: row;
   background-color:#504C46;
   color:#FBF3E4;
-}
-
-/** pam removed, you have another .footer-content-wrapper below
-.footer-content-wrapper {
-  width: 100%;
-  margin: 10em auto;  
-}
-**/
+  position: relative;
+  bottom: 0;
+  }
 
 .footer-col a {
   color: #FBF3E4;
@@ -241,6 +285,7 @@ footer {
 .footer-col a {
   display: block;
   margin: 0.3em 0;
+  position: relative;
 }
 
 /* pam added */
@@ -275,4 +320,243 @@ footer {
   .fa-2x {
     font-size: 24px;
   }
+}
+/*About Page*/
+.column-Left {
+  float: left;
+  width: 45%;
+}
+.column-right{
+  float: left;
+  width: 45%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Text*/
+.Intro{
+  color: #6f87ff;
+
+  }
+
+.ThisisME{
+float: center;
+max-width: 40%;
+padding: 0px 0px 50px 10px;
+}
+.coffeelover{
+  float: center;
+  max-width: 50%;
+  padding: 0px 0px 50px 150px;
+}
+.bg {
+   /* Full height */
+  height: 100%; 
+  width: 100%; /* pam added */
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.column-Left{
+  padding: 50px 0px 0px 0px;
+}
+.column-Right{
+  padding: 50px 0px 0px 0px;
+}
+
+/*Table*/
+table#your-table-items {
+  border-collapse: collapse;
+  /* in inspector mode - easier to see the difference between collapse and no collapse */
+  border: 1px solid rgba(154, 154, 154, 0.75);
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0px 60px 50px 60px;
+}
+
+table#your-table-items th:nth-child(1),
+table#your-table-items td:nth-child(1) {
+  width: 35%;
+}
+
+table#your-table-items th:nth-child(2),
+table#your-table-items td:nth-child(2) {
+  width: 30%;
+}
+
+table#your-table-items th:nth-child(3),
+table#your-table-items td:nth-child(3) {
+  width: 20%;
+}
+
+table#your-table-items th:nth-child(4),
+table#your-table-items td:nth-child(4) {
+  width: 15%;
+}
+
+table#your-table-items thead {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+table#your-table-items thead th {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+}
+
+table#your-table-items thead th:hover {
+  color: #fff;
+  background-color: #FF5050;
+  cursor: pointer;
+}
+
+table#your-table-items thead th.tablesorter-headerAsc,
+table#your-table-items thead th.tablesorter-headerDesc {
+  background-color: #FF5050;
+}
+
+table#your-table-items tbody {
+  font-size: 0.9em;
+  line-height: 15px;
+}
+
+/*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+/*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+table#your-table-items tbody tr:nth-child(even) {
+  background: rgba(154, 154, 154, 0.25);
+}
+
+table#your-table-items tbody tr:hover {
+  color: #fff;
+  background-color: #6f87ff;
+}
+
+table#your-table-items tbody td {
+  padding: 8px 20px;
+  border-top: 1px solid rgba(154, 154, 154, 0.75);
+  border-right: 1px solid rgba(154, 154, 154, 0.75);
+}
+
+table#your-table-items tbody td img {
+  width: 100px;
+  margin: 0 10px 0 0;
+  border: 1px solid rgba(154, 154, 154, 0.75);
+}
+/*Process*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*video*/
+
+iframe.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/*ACCORDION*/
+/* Sets the width for the accordion. Sets the margin to 80% on the top and bottom and auto to the left and right */
+
+.accordion {
+  width: 80%;
+  color: #504C46;
+  background-color:#FBF3E4;
+  padding: 15px 80px;
+  
+}
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+  
+}
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 30px;
+  color: #504C46;
+  cursor: pointer;
+}
+/* Positions the plus sign 5px from the right. Centers it using the transform property. */
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+  position: relative;
+  background: #6f87ff;
+  color: #FBF3E4;
+  font-size: 15px;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  height: 0;
+  padding-inline: 10px;
+}
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 1px solid grey;
+}
+/* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+  height: auto;
+  
+}
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+  content: '-';
+  font-size: 20px;
+}
+
+/*Carousel*/
+
+section>div.carousel-area.center {
+  width: 70%;
+  padding: 0px 40px 40px 40px;
+  margin: 10px;
+}
+
+/*Scrollable Area*/
+div.scrolling {
+  width: 90%;
+  height: 150px;
+  padding: 10px 10px 5px 10px;
+  border: #6f87ff inset 5px;
+  overflow: auto;
+  background-color: #FBF3E4;
+}
+.BlogArticle{
+  display: inline-block;
+  margin: 25px;
+  scroll-snap-align: center;
 }
