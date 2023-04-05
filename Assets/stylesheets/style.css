@@ -96,7 +96,7 @@ nav>ul>li {
   padding-left: 30px;
 }
 .flex-container-video{
-  align-items: center;
+  /* pam removed align-items: center;*/
   text-align: center;
 }
 
@@ -548,15 +548,11 @@ section>div.carousel-area.center {
 
 /*Scrollable Area*/
 div.scrolling {
-  width: 90%;
+  /* pam removed it width: 90%;*/
   height: 150px;
+  margin: 25px; /* pam added */
   padding: 10px 10px 5px 10px;
   border: #6f87ff inset 5px;
   overflow: auto;
   background-color: #FBF3E4;
-}
-.BlogArticle{
-  display: inline-block;
-  margin: 25px;
-  scroll-snap-align: center;
 }
