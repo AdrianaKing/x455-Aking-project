@@ -43,7 +43,7 @@
         </div>
       </nav>
       <!-- center logo -->
-      <nav id="navLogo"><a href="index.html"><img class="logo" src="./Assets/images/LogoPortfolio.png"/></a></nav>
+      <nav id="navLogo"><a href="#"><img class="logo" src="./Assets/images/LogoPortfolio.png"/></a></nav>
       <!-- horizontal right -->
       <nav id="navRight">
         <ul style="padding-left: 20px;">
@@ -63,7 +63,7 @@
   </header>
   <h1 style="text-align: center;">Learn More About Graphic Design</h1>
 
-    
+    <!-- pam removed it <article class="BlogArticle"> -->
     
     <div class="scrolling">
       <p>
@@ -88,7 +88,7 @@
         In conclusion, graphic design is an exciting and dynamic field that requires a mix of technical skills, creativity, and communication skills. Whether you're just starting out or have years of experience, there's always something new to learn in the world of graphic design. By staying curious, open-minded, and dedicated to your craft, you can create designs that are not only visually stunning but also effective in communicating your message.
       </p>
     </div>
-  
+  <!-- pam removed it </article> -->
 
 
   <section>
@@ -163,6 +163,10 @@
   
   <!-- Inline CSS -->
   <section style="width: auto; height: auto; background-color: #FBF3E4;"></section>
+  <!-- jquery.min.js should be loaded before bootstrap.min.js because bootstrap's JavaScript requires jQueary -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   
 
   <div style="display: flex; flex-direction: column;">
@@ -198,7 +202,7 @@
         <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
           <h4>Newsletter:</h4>
           <span><label>Sign up for Newsletter:</label><br><input type="email" placeholder="enter your email"/></span>
-       
+        <!-- pam removed extra </section> -->
         </div>
         <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
             <a href="#" target="_blank">Privacy Policy</a>
@@ -214,10 +218,6 @@
     </footer>
     <div class="fa fa-copyright copyright-content">All Rights Reserved.</div>
   </div>
-
-   <!-- jquery.min.js should be loaded before bootstrap.min.js because bootstrap's JavaScript requires jQueary -->
-   <script type="text/JavaScript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
